@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+<!-- THIS IS THE PARENT PAGE -->
+<!-- IF YOU WANT TO LINK A PAGE, use the below: -->
+<!-- <a href='page.html' target='myiframe'> linkName </a> -->
+<!-- THIS IS SO THAT ALL CHILD PAGES WILL BE EMBEDDED IN THE PARENT PAGE -->
+<!-- Built by Zhen -->
+
+<head>
+<link rel='stylesheet' href='styles.css'>
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+<style>
+.item1 { grid-area: header;
+         background-image: url(colorSplash.jpg);
+         background-attachment: fixed;
+         background-position: center;
+         background-repeat: no-repeat;
+         background-size: cover;}
+.item2 { grid-area: menu; }
+.item3 { grid-area: articles}
+.item4 { grid-area: footer; }
+.item5 { grid-area: navBar}
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    'navBar navBar navBar navBar navBar navBar'
+    'header  header header header header header'
+    'menu articles articles articles articles articles'
+    'footer footer footer footer footer footer ';
+  grid-gap: 5px;
+  background-color: darkgreen;
+  padding: 10px;
+}
+
+.grid-container > div {
+  background-color: white;
+  text-align: center;
+  padding: 1px 0;
+}
+
+table { border-collapse: collapse;
+        table-layout: auto;}
+
+tr {border: none;}
+
+th, td {
+    word-wrap: break-word;
+    border-left: solid 1px;
+    border-right: solid 1px;
+    padding: 15px;
+    }
+
+</style>
+
+</head>
+<body>
+
+
+  <div class="grid-container">
+    <div class='item5' style='background-color:darkgreen; color:white'>
+      <table align='left'>
+        <tr>
+          <td style='border-left: none'></td>
+          <td><a href='https://sites.google.com/alice-smith.edu.my/epstudentgateway/home?authuser=0'><img src="alice-smithIcon.png" height=80px width=80px border-width=5px style='padding:10px'></a></td>
+          <td> The Alice Smith School </td>
+          <td> <a href='latestArticles.html' target='myiframe'> Home </a> </td>
+          <td> <a href='about.html' target='myiframe'> About </a> </td>
+          <td> <a href='events.html' target='myiframe' > Events </a> </td>
+          <td> <a href='contribute.html' target='myiframe' > Contribute </a> </td>
+        </tr>
+      </table>
+    </div>
+
+
+  <div class="item1">
+      <p style='font-size: 80px; color: darkgrey'> KLASS Students Blog </p>
+      <p style='font-size: 20px; color: darkgrey'> A place for KLASS students to post what's on their minds. </p>
+  </div>
+
+  <div class="item2">
+      <table class='center' width='90%'>
+        <tr>
+          <td style='border:none; font-size: 30px'><a href='https://sites.google.com/alice-smith.edu.my/epstudentgateway/home'>Back to Gateway </a> </td>
+        </tr>
+        <tr>
+          <td style='font-size: 25px'> Subjects </td>
+        </tr>
+        <tr>
+          <tr>
+            <td><a href='https://sites.google.com/alice-smith.edu.my/newmathematics-computing/home' class='subjectLinks'>Mathematics & Computing </a></td>
+          </tr>
+        <tr>
+          <td><a href='https://sites.google.com/alice-smith.edu.my/newscience-dt/home' class='subjectLinks'>Science & DT </a></td>
+        </tr>
+        <tr>
+          <td><a href='https://sites.google.com/alice-smith.edu.my/english-and-media-faculty/faculty-home' class='subjectLinks'>English & Media </a></td>
+        </tr>
+        <tr>
+          <td><a href='https://sites.google.com/alice-smith.edu.my/newhumanities/home' class='subjectLinks'>Humanities</a></td>
+        </tr>
+        <tr>
+          <td><a href='https://sites.google.com/alice-smith.edu.my/pe-and-sports-ep/home' class='subjectLinks'>PE & Sport </a></td>
+        </tr>
+        <tr>
+          <td><a href='https://sites.google.com/alice-smith.edu.my/klassmodernforeignlanguages/home' class='subjectLinks'>MFL </a></td>
+        </tr>
+        <tr>
+          <td><a href='https://sites.google.com/alice-smith.edu.my/cearts/home' class='subjectLinks'>CEA </a></td>
+        </tr>
+        <tr>
+          <td><a href='https://sites.google.com/a/alice-smith.edu.my/learning-support-unit/home'class='subjectLinks'>PLF </a></td>
+        </tr>
+        <tr>
+          <td style='font-size: 25px'> Key Stage </td>
+        <tr>
+          <td><a href='https://sites.google.com/a/alice-smith.edu.my/ks3/' class='subjectLinks'> KS3 </a></td>
+        </tr>
+        <tr>
+          <td><a href='https://sites.google.com/a/alice-smith.edu.my/ks4/' class='subjectLinks'> KS4 </a></td>
+        </tr>
+        <tr>
+          <td><a href='https://sites.google.com/a/alice-smith.edu.my/ks4/' class='subjectLinks'> KS4 </a></td>
+        </tr>
+        <tr>
+          <td><a href='https://sites.google.com/alice-smith.edu.my/sixthform/home' class='subjectLinks'> Sixth Form </a></td>
+        </tr>
+      </table>
+  </div>
+    <div class="item3"><iframe name='myiframe' width=100% height = 100% src='latestArticles.html'></iframe></div>
+
+  </div>
+  <div class="item4" style='text-align: left; font-size: 10px; color:white; background-color:#3D3E3D'>
+      <table>
+        <tr>
+          <td style='border:none'></td>
+          <td style='border-left:none'> FIND US</td>
+          <td><b> Secondary Campus </b> <br>
+              3 Jalan Equine, Taman Equine,<br>
+              43300 Seri Kembangan,<br>
+              Selangor, Malaysia<br>
+              Phone: +603 9543 3688<br>
+              Hours<br>
+              Monday—Friday: 7:30AM–5:00PM <br>
+            </td>
+            <td style='border-right:none'><b> Primary Campus </b> <br>
+                2 Jalan Bellamy,<br>
+                50460 Kuala Lumpur,<br>
+                Malaysia<br>
+                Phone: +603 2148 3674<br>
+              </td>
+            <td style='border:none'></td>
+            <td style='border-left:none'> CONTACT US </td>
+            <td>
+              <a href='https://www.facebook.com/AliceSmithSch/'><img src='facebook.jpg' style='width:40px; height:40px'>
+            </td>
+            <td>
+              <a href='https://twitter.com/AliceSmithSch'><img src='twitter.jpg' style='width:40px; height:40px'>
+            </td>
+        </tr>
+      </table>
+  </div>
+
+</div>
+
+</body>
+</html>
