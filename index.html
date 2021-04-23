@@ -12,7 +12,7 @@
 
 <style>
 .header { grid-area: header;
-         background-image: url(aliceSmith.jpg);
+         /* background-image: url(aliceSmith.jpg); */
          background-attachment: fixed;
          background-position: center;
          background-repeat: no-repeat;
@@ -50,8 +50,6 @@ tr {border: none;}
 
 th, td {
     word-wrap: break-word;
-    border-left: solid 1px;
-    border-right: solid 1px;
     padding: 15px;
     }
 
@@ -66,6 +64,43 @@ th, td {
 .zoom:hover {
       transform: scale(1.2); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
     }
+
+.active {
+  background-color: red;
+  font: white
+
+
+}
+.active:hover {
+  background-color: red
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+  text-align: center;
+  font-size: 25px
+}
+
+li {
+  float: left;
+  border-right: 3px solid white;
+}
+
+
+li a {
+  display: block;
+  color: white !important;
+  text-align: center;
+  padding: 16px 16px 16px;
+  text-decoration: none !important;
+}
+
+li a:hover {
+  background-color: #111;
+}
 
 @media (max-width: 1000px) {
   .grid-container {
@@ -86,52 +121,45 @@ iframe{
 .content {
     padding:20px;
     width:710px;
+    height:1000px;
     position:relative;
     background: rgb(204, 204, 204); /* Fallback for older browsers without RGBA-support */
     background: rgba(204, 204, 204, 0.5);
 }
+.wrapper         {width:95%;height:1000px;margin:0 auto;background:#CCC}
+.iframe1        {position:relative;}
+.iframe1 .ratio {display:block;width:100%;height:auto;}
+.iframe1 iframe {position:absolute;top:0;left:0;width:100%; height:1500px;}
 </style>
 
 </head>
 <body>
 
   <div class="grid-container">
-    <div class='navBar' style='background-color:#1c1c1c; color:white; z-index:1'>
-      <table align='left'>
-        <tr>
-          <td style='border-left: none'></td>
-          <td><a href='https://sites.google.com/alice-smith.edu.my/epstudentgateway/home?authuser=0'><img src="alice-smithIcon.png" height=80px width=80px border-width=5px></a></td>
-          <td> <a href='https://sites.google.com/alice-smith.edu.my/epstudentgateway/home?authuser=0'>The Alice Smith School </a></td>
-          <td> <a href='latestArticles.html' target='myiframe'> HOME </a> </td>
-          <td> <a href='about.html' target='myiframe'> ABOUT </a> </td>
-          <td> <a href='team.html' target='myiframe' > TEAM </a> </td>
-          <!-- <td> <a href='events.html' target='myiframe' > EVENTS </a> </td> -->
-          <td> <a href='contribute.html' target='myiframe' > CONTRIBUTE </a> </td>
-          <td>
-            <div class="dropdown">
-              <button class="dropbtn">☰ GATEWAY</button>
-              <div class="dropdown-content">
-                <a href='https://sites.google.com/alice-smith.edu.my/epstudentgateway/home'>GSite </a>
-                <a href='https://sites.google.com/a/alice-smith.edu.my/ks3/' class='subjectLinks'> KS3 </a>
-                <a href='https://sites.google.com/a/alice-smith.edu.my/ks4/' class='subjectLinks'> KS4 </a>
-                <a href='https://sites.google.com/alice-smith.edu.my/sixthform/home' class='subjectLinks'> Sixth Form </a>
-              </div>
-            </div>
-          </td>
-        </tr>
-      </table>
+    <div class='wrapper' style='width: 500%; height:50%'>
+    <div class='iframe1'>
+    <div class='navBar' style='color:black; z-index:1'>
+      <ul>
+        <li><a class="active" href="https://sites.google.com/alice-smith.edu.my/epstudentgateway/home"><i> KLASS JOURNAL </i></a></li>
+        <li> <a href='latestArticles.html' target='myiframe'> HOME </a> </li>
+        <li> <a href='about.html' target='myiframe'> ABOUT </a> </li>
+        <li> <a href='team.html' target='myiframe' > TEAM </a> </li>
+        <li style="float:right; background-color:black" ><a href="index.html">(coming soon) </a></li>
+      </ul>
     </div>
 
 
-  <div class="header">
+
+  <!-- <div class="header">
       <p style='font-size: 80px;' class='zoom'> <mark style='background: rgba(0, 0, 0, 0.5); color:white'>The KLASS Journal </mark></p>
       <p style='font-size: 20px;' class='zoom'> <mark style='background: rgba(0, 0, 0, 0.5); color:white'> A place for KLASS students to post what's on their minds. </mark> </p>
-  </div>
-    <div class="articles" width='90%'>
-      <iframe src="latestArticles.html" name='myiframe' height=100% width=200></iframe>
-    </div>
+  </div> -->
 
-  </div>
+      <div class='iframe1'>
+        <iframe src="latestArticles.html" name='myiframe' style='border:none'></iframe>
+      </div>
+      </div>
+      </div>
   <div class="footer" style='text-align: left; font-size: 10px; color:white; background-color:#1c1c1c'>
 
       <table>

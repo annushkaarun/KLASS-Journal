@@ -13,14 +13,13 @@
   grid-template-areas: 'articles';
   grid-gap: 5px;
   background-color: white;
-  padding: 10px;
-
+  padding: 0px;
 }
 
 .grid-container > div {
   background-color: white;
   text-align: center;
-  padding: 20px 0;
+  padding:0px 0;
 }
 
 table { border-collapse: collapse;
@@ -31,8 +30,6 @@ tr {border: none;}
 
 th, td {
     word-wrap: break-word;
-    border-left: solid 1px;
-    border-right: solid 1px;
     padding: 15px;
     }
 
@@ -44,14 +41,19 @@ th, td {
 
   <div class="grid-container">
   <div class="item3" >
-      <table class='center' width='90%'>
+    <br>
+      <table class='center'>
         <tr>
-          <td style='border:none; font-size: 80px' align='left' colspan='2' >Latest posts </td>
+          <td style='border-top: 1px solid black'>
+          <table>
+            <td style='border:none; font-size: 40px' align='left' colspan='2' > <b> Latest posts<b> </td>
+          </table>
+        </td>
         </tr>
         <tr>
           <td>
-            <table class='articleTables' >
-                <tr>
+            <table class='articleTables'>
+                <tr style='border-bottom: 1px solid #D3D3D3'>
                   <!-- MAIN ARTICLE HERE (USE SPECIFIC FONT SIZE NOT 'articleHeader' HERE)-->
                   <td style='vertical-align:top;text-align:left; border:none;' width='20%'>
                     <p class='genreType'> HEALTH & LIFESTYLE </p>
@@ -60,29 +62,16 @@ th, td {
                     <p class='articleDescription'> by <a href='bloggerPageTEMPLATE.html' target='myiframe' class='articleAuthor'><b> Anandita	Abraham </b> </a> </p>
                   <!-- SUB ARTICLE 1 RIGHT -->
                   </td>
-                  <td width='50%' style='vertical-align:top'> <img src="hustle.jpg" border-width=5px style='width:90%'></td>
-                  <td width='30%' style='border:none'>
-                    <table>
-                      <tr><td style='vertical-align:top; border:none;'> <img src='sanitise.jpg' width=100%></td></tr>
-                      <tr>
-                        <td style='vertical-align:top;text-align:left; border:none;' width='20%'>
-                          <p class='genreType'> COVID-19 </p>
-                          <p class='articleHeader' style='font-size:30px'> <a href='23ASone.html' target='_blank'> Sanitising desks between lessons: Is it really effective? </a></p>
-                          <p class='articleDescription'> A detailed discussion into the science of sanitisation  </p>
-                          <p class='articleDescription'> by <a href='23ASbio.html' target='myiframe' class='articleAuthor'><b> Anya	Sithambaram </b> </a> </p>
-                        </td>
-                      </tr>
+                  <td width='50%' style='vertical-align:top; border-right: 1px solid #D3D3D3'> <img src="hustle.jpg" border-width=5px style='width:90%'></td>
+                  <td width='30%' style='text-align:left'>
+                    <img src='sanitise.jpg' style='width:90%'>
+                    <p class='genreType'> COVID-19 </p>
+                    <p class='articleHeader' style='font-size:30px'> <a href='23ASone.html' target='_blank'> Sanitising desks between lessons: Is it really effective? </a></p>
+                    <p class='articleDescription'> A detailed discussion into the science of sanitisation  </p>
+                    <p class='articleDescription'> by <a href='23ASbio.html' target='myiframe' class='articleAuthor'><b> Anya	Sithambaram </b> </a> </p>
                     </td>
                   </tr>
-                </table>
-              </table>
-            <br>
-            <br>
-            <tr>
-              <td>
-                <table class='articleTables' >
-                  <tr>
-                    <!-- MAIN ARTICLE HERE (USE SPECIFIC FONT SIZE NOT 'articleHeader' HERE)-->
+                  <tr style='border-bottom: 1px solid #D3D3D3'>
                     <td style='vertical-align:top;text-align:left; border:none;' width='20%'>
                       <p class='genreType'> SPORTS </p>
                       <p style='font-size:40px'> <a href='22AWone.html' target='_blank'> Racing through America's Cup illustrious journey</a></p>
@@ -90,33 +79,19 @@ th, td {
                       <p class='articleDescription'> by <a href='22AWbio.html' target='myiframe' class='articleAuthor'><b> Adri Whittingham </b> </a> </p>
                     <!-- SUB ARTICLE 1 RIGHT -->
                     </td>
-                    <td width='50%' style='vertical-align:top'> <img src="boat.jpg" border-width=5px style='width:90%'></td>
-                    <td width='30%' style='border:none'>
-                      <table>
-                        <tr><td style='vertical-align:top; border:none;'><img src='23PCpic1.png' width='75%'></td></tr>
-                        <tr>
-                          <td style='vertical-align:top;text-align:left; border:none;' width='20%'>
-                            <p class='genreType'> SCIENCE </p>
-                            <p class='articleHeader' style='font-size:30px'> <a href='23PCone.html' target='_blank'> Genealogy: A brief history  </a></p>
-                            <p class='articleDescription'> Tracing back into the past </p>
-                            <p class='articleDescription'> by <a href='23PCbio.html' target='myiframe' class='articleAuthor'><b> Priasha	Choudhary  </b> </a> </p>
-                          </td>
-                        </tr>
+                    <td width='50%' style='vertical-align:top; border-right: 1px solid #D3D3D3'> <img src="boat.jpg" border-width=5px style='width:90%; border-right:1px'></td>
+                    <td width='30%' style='text-align:left'>
+                      <img src='23PCpic1.png' style='width:90%'>
+                      <p class='genreType'> SCIENCE </p>
+                      <p class='articleHeader' style='font-size:30px'> <a href='23PCone.html' target='_blank'> Genealogy: A brief history  </a></p>
+                      <p class='articleDescription'> Tracing back into the past </p>
+                      <p class='articleDescription'> by <a href='23PCbio.html' target='myiframe' class='articleAuthor'><b> Priasha	Choudhary  </b> </a> </p>
+
                       </td>
                     </tr>
-                  </table>
                 </table>
             </tr>
           </table>
-
-            <br>
-            <br>
-
-
-
-
-
-
 </div>
 
 </body>
