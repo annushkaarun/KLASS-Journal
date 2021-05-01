@@ -91,7 +91,8 @@ a:hover {
 
 .genreType {
   font-size:20px;
-  color:red
+  color:red;
+  transition: 0.2s ;
 }
 
 .subjectLinks {
