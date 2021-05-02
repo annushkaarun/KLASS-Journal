@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel='stylesheet' href='styles.css'>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+  .item3 { grid-area: articles}
+
+  .grid-container {
+    display: grid;
+    grid-template-areas: 'articles';
+    grid-gap: 5px;
+    background-color: white;
+    padding: 0px;
+  }
+
+
+  .grid-container > div {
+    background-color: white;
+    text-align: center;
+    padding:0px 0;
+  }
+
+  table { border-collapse: collapse;
+          table-layout: auto;}
+
+
+  tr {border: none;}
+
+  }
+
+  th, td {
+      word-wrap: break-word;
+      padding: 15px;
+      }
+      img {
+           display: block;
+           vertical-align: middle;
+           padding: 20px
+         }
+
+  * {
+    box-sizing: border-box;
+  }
+
+
+  /* Create two equal columns that floats next to each other */
+  .columnLeft{
+    float: left;
+    width:45%;
+    padding: 10px;
+  }
+  .columnRight {
+    float: right;
+    width:55%;
+    padding: 10px;
+  }
+
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 1000px) {
+    .columnLeft {
+      float:none;
+      width: 100%;
+      display:block;
+    }
+    .columnRight {
+      width:100%
+    }
+  }
+  .page {
+    transition: 0.3s ease;
+  }
+  .page:hover {
+    background-color:#e8e8e8;
+  }
+  .geeks {
+          overflow: hidden;
+          margin: 0 auto;
+      }
+
+      .geeks img {
+          width: 100%;
+          transition: 0.5s;
+      }
+
+      .geeks:hover img {
+          transform: scale(1.1);
+      }
+
+
+  </style>
+</head>
+  <body>
+    <div class='center'>
+        <div class='center'>
+          <p style='padding-bottom:20px;padding-left:25px;border-bottom:1px solid black; font-size: 60px' align='left' colspan='2' > <b>  Past Editions<b> </p>
+        </div>
+        <p style='padding-left: 25px; font-size:30px'> Edition #1 </p>
+        <table class='articleTables'>
+            <tr style='border-bottom: 1px solid #D3D3D3'>
+              <!-- MAIN ARTICLE HERE (USE SPECIFIC FONT SIZE NOT 'articleHeader' HERE)-->
+              <td style='vertical-align:top;text-align:left; border-right: 1px solid #D3D3D3;' width='70%'>
+                <img src="hustle.jpg" border-width=5px style='width:70%; float:right'  HSPACE=”50” VSPACE=”50”>
+                <p class='genreType'> HEALTH & LIFESTYLE </p>
+                <p style='font-size:40px'> <a href='22AAone.html' target='_blank'> Hustle Culture: the Biggest Scam Ever </a></p>
+                <p class='articleDescription'> The endless grind for seeming success </p>
+                <p class='articleDescription'> by <a href='bloggerPageTEMPLATE.html' target='myiframe' class='articleAuthor'><b> Anandita	Abraham </b> </a> </p>
+
+              <!-- SUB ARTICLE 1 RIGHT -->
+              </td>
+              <!-- <td width='50%' style='vertical-align:top; border-right: 1px solid #D3D3D3'> <img src="hustle.jpg" border-width=5px style='width:90%'></td> -->
+              <td width='30%' style='text-align:left'>
+                <img src='sanitise.jpg' style='width:90%'>
+                <p class='genreType'> COVID-19 </p>
+                <p class='articleHeader' style='font-size:30px'> <a href='23ASone.html' target='_blank'> Sanitising desks between lessons: Is it really effective? </a></p>
+                <p class='articleDescription'> A detailed discussion into the science of sanitisation  </p>
+                <p class='articleDescription'> by <a href='23ASbio.html' target='myiframe' class='articleAuthor'><b> Anya	Sithambaram </b> </a> </p>
+                </td>
+              </tr>
+              <tr style='border-bottom: 1px solid #D3D3D3'>
+                <td style='vertical-align:top;text-align:left; border-right: 1px solid #D3D3D3 ;' width='20%'>
+                  <img src="boat.jpg" border-width=5px style='width:70%; float:right'  HSPACE=”50” VSPACE=”50”>
+                  <p class='genreType'> SPORTS </p>
+                  <p style='font-size:40px'> <a href='22AWone.html' target='_blank'> Racing through America's Cup illustrious journey</a></p>
+                  <p class='articleDescription'> Competitive sailing and its history through the years </p>
+                  <p class='articleDescription'> by <a href='22AWbio.html' target='myiframe' class='articleAuthor'><b> Adri Whittingham </b> </a> </p>
+                <!-- SUB ARTICLE 1 RIGHT -->
+                </td>
+                <!-- <td width='50%' style='vertical-align:top; border-right: 1px solid #D3D3D3'> <img src="boat.jpg" border-width=5px style='width:90%; border-right:1px'></td> -->
+                <td width='30%' style='text-align:left'>
+                  <img src='23PCpic1.png' style='width:90%'>
+                  <p class='genreType'> SCIENCE </p>
+                  <p class='articleHeader' style='font-size:30px'> <a href='23PCone.html' target='_blank'> Genealogy: A brief history  </a></p>
+                  <p class='articleDescription'> Tracing back into the past </p>
+                  <p class='articleDescription'> by <a href='23PCbio.html' target='myiframe' class='articleAuthor'><b> Priasha	Choudhary  </b> </a> </p>
+
+                  </td>
+                </tr>
+            </table>
+    </div>
+  </body>
+</html>

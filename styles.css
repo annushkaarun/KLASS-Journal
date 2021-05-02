@@ -90,7 +90,7 @@ a:hover {
 
 
 .genreType {
-  font-size:20px;
+  font-size:30px;
   color:red;
   transition: 0.2s ;
 }
@@ -146,12 +146,12 @@ a:hover {
   }
 
 .articleDescription {
-  font-size: 15px;
+  font-size: 20px;
   color: grey
 }
 
 .articleAuthor {
-  font-size:15px;
+  font-size:20px;
   color: black
 }
 
