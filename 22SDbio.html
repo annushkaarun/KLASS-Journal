@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<!-- YOU CAN IGNORE ALL THIS -->
+<head>
+<link rel='stylesheet' href='styles.css'>
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+<script>
+function goBack() {
+  window.history.back();
+}
+</script>
+<style>
+.item3 { grid-area: articles}
+
+.grid-container {
+  display: grid;
+  grid-template-areas: 'articles';
+  grid-gap: 5px;
+  background-color: white;
+  padding: 10px;
+  border-spacing:10px
+}
+
+.grid-container > div {
+  background-color: white;
+  text-align: center;
+  padding: 20px 0;
+}
+
+table { border-spacing:10px;
+        table-layout: auto;}
+
+tr {border: none;}
+
+th, td {
+    word-wrap: break-word;
+    padding: 5px;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    /* Create two equal columns that floats next to each other */
+    .column {
+      float: left;
+      width: 50%;
+      padding: 10px;
+    }
+
+    /* Clear floats after the columns */
+    .row:after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+
+    /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+    @media screen and (max-width: 600px) {
+      .column {
+        width: 100%;
+        vertical-align: top
+      }
+    }
+
+
+
+</style>
+
+</head>
+<body>
+
+<!-- EDIT INSIDE THIS BLOCK UNDER 'ITEM 3' -->
+  <div class="grid-container">
+    <div class="item3" style='align-items:left'>
+      <table class='center' style='text-align:left;' width=90%>
+        <td style='font-size:20px; color:red; border-bottom:1px solid grey; vertical-align:center'>
+          <input type="button" value="◄" onclick="history.back()">
+
+        </td>
+        <tr>
+          <td>
+            <div style='text-align:left'>
+              <img src='siobhain.jpg' width=200 align='right'>
+              <p style='font-size:60px;'><b> Siobhain Doyle </b> </p>
+              <p> Year 12 <span style='color:red'>• </span> 22siobhaind@alice-smith.edu.my</p>
+            </div>
+        </td>
+        <tr>
+          <td style='border-bottom:1px solid black' colspan='2'> <b> Biography </b></td>
+        </tr>
+        <tr>
+          <td>
+            <p>
+      Hi I'm Siobhain! I've been at the Alice Smith school for 13 years now, practically since the stone age, but loving every minute of it! In my free time, I enjoy running and cycling, especially long distances and I also love having a little jazz session on the saxophone! My passions lie in Chemistry & Economics mainly and I love being able to explore these passions through investments in the Crypto market and reading up about new scientific discoveries. I hope that one day I'll be able to become a Chemical Engineer whilst being able to continue running at an elite level. 
+            </p>
+
+        </tr>
+        <tr>
+          <td style='border-bottom:1px solid black' colspan='2'> <b> Recent Posts </b></td>
+        </tr>
+      </table>
+
+
+
+    </div>
+  </div>
+
+</body>
+
+
+</html>
