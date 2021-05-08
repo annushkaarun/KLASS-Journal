@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<!-- YOU CAN IGNORE ALL THIS -->
+<head>
+<link rel='stylesheet' href='styles.css'>
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+<script>
+function goBack() {
+  window.history.back();
+}
+</script>
+<style>
+.item3 { grid-area: articles}
+
+.grid-container {
+  display: grid;
+  grid-template-areas: 'articles';
+  grid-gap: 5px;
+  background-color: white;
+  padding: 10px;
+  border-spacing:10px
+}
+
+.grid-container > div {
+  background-color: white;
+  text-align: center;
+  padding: 20px 0;
+}
+
+table { border-spacing:10px;
+        table-layout: auto;}
+
+tr {border: none;}
+
+th, td {
+    word-wrap: break-word;
+    padding: 5px;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    /* Create two equal columns that floats next to each other */
+    .column {
+      float: left;
+      width: 50%;
+      padding: 10px;
+    }
+
+    /* Clear floats after the columns */
+    .row:after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+
+    /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+    @media screen and (max-width: 600px) {
+      .column {
+        width: 100%;
+        vertical-align: top
+      }
+    }
+
+
+
+</style>
+
+</head>
+<body>
+
+<!-- EDIT INSIDE THIS BLOCK UNDER 'ITEM 3' -->
+  <div class="grid-container">
+    <div class="item3" style='align-items:left'>
+      <table class='center' style='text-align:left;' width=90%>
+        <td style='font-size:20px; color:red; border-bottom:1px solid grey; vertical-align:center'>
+          <input type="button" value="◄" onclick="history.back()">
+
+        </td>
+        <tr>
+          <td>
+            <div style='text-align:left'>
+              <img src='adri.jpg' width=200 align='right'>
+              <p style='font-size:60px;'><b> Zhen Wei Yap</b> </p>
+              <p> Year 12 <span style='color:red'>• </span> 22zhenweiy@alice-smith.edu.my</p>
+            </div>
+        </td>
+        <tr>
+          <td style='border-bottom:1px solid black' colspan='2'> <b> Biography </b></td>
+        </tr>
+        <tr>
+          <td>
+            <p>
+             Hello World! I'm Zhen, I have been a student at KLASS since Year 7 and currently in Year 12. I enjoy playing waterpolo and volunteering weekly at a community farm (KKB). During my spare time, I like to build scale model aeroplanes, particularly the World War 2 monoplanes. My passions invovlve Chemistry and the wider understanding of What causes Chemical Reactions to happen. 
+            </p>
+
+        </tr>
+        <tr>
+          <td style='border-bottom:1px solid black' colspan='2'> <b> Recent Posts </b></td>
+        </tr>
+        <tr>
+          <td>
+            <div class='page'>
+              <div class="row">
+                <div class="columnLeft" style="">
+                  <div class='geeks'>
+                  <img src='' width='100%'>
+                </div>
+                </div>
+                <div class="columnRight" style="text-align:left">
+                  <p class='genreType'>  </p>
+                  <p style='font-size:40px'> <a href='' target='_blank'></a></p>
+                  <p class='articleDescription'></p>
+                  <p class='articleDescription'> by <a href='' target='myiframe' class='articleAuthor'><b> </b> </a> </p>
+                </div>
+              </div>
+            </div>
+          </td>
+        </tr>
+      </table>
+
+
+
+    </div>
+  </div>
+
+</body>
+
+
+</html>
